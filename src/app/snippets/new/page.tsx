@@ -1,7 +1,12 @@
 import { db } from "@/db";
 
 export default function SnippetCreatePage() {
-  async function createSnippet() {}
+  async function createSnippet(formData: FormData) {
+    "use server";
+
+    const title = formData.get("title");
+    const code = formData.get("code");
+  }
 
   return (
     <form>
