@@ -1,4 +1,8 @@
+import { db } from "@/db";
+
 export default function SnippetCreatePage() {
+  async function createSnippet() {}
+
   return (
     <form>
       <h3 className="font-bold m-3">Create a Snippet</h3>
