@@ -1,3 +1,5 @@
+import { db } from "@/db";
+
 interface SnippetEditPageProps {
   params: {
     id: string;
