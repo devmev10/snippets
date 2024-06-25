@@ -3,6 +3,7 @@ import { redirect } from "next/navigation";
 
 export default function SnippetCreatePage() {
   async function createSnippet(formData: FormData) {
+    // This needs to be a server action
     "use server";
 
     const title = formData.get("title") as string;
