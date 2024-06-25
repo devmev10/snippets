@@ -6,6 +6,7 @@ export default function SnippetCreatePage() {
     // This needs to be a server action
     "use server";
 
+    // Check the user inputs and make sure its valid
     const title = formData.get("title") as string;
     const code = formData.get("code") as string;
 
